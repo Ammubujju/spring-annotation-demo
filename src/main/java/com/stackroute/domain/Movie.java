@@ -8,13 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
-
+//implementing the beans
 public class Movie implements ApplicationContextAware, BeanFactoryAware, BeanNameAware
 {
     @Autowired
     public Actor actor;
 
-
+//using constructor
     public Movie()
     {
     }
@@ -33,7 +33,7 @@ public class Movie implements ApplicationContextAware, BeanFactoryAware, BeanNam
     {
         this.actor = actor;
     }
-
+//displaying information
     public void display()
     {
         System.out.println("Actor information : "+actor.getName()+" : gender is :" +actor.getGender()+" : age is :" +actor.getAge());
