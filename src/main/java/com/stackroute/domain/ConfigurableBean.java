@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
+//Indicates that a class declares one or more @Bean methods
 @Configuration
 public class ConfigurableBean {
     @Bean(name={"movie1","movie2"})
@@ -19,7 +20,9 @@ public class ConfigurableBean {
         Movie mov=new Movie(actorBean2());
         return mov;
     }
-    @Bean
+
+  // instantiate, configure and return bean ...
+  @Bean
     public Actor actorBean1()
     {
         return new Actor("Suresh","Male",35);
