@@ -2,7 +2,7 @@ package com.stackroute.domain;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-
+//Declaration
 public class Actor {
 
     private String name;
@@ -18,7 +18,7 @@ public class Actor {
         this.age = age;
     }
 
-
+//using getters
     public String getName() {
         return name;
     }
