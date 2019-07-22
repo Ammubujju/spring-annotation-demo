@@ -3,10 +3,11 @@ import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
-
+//Indicates that a class declares one or more @Bean methods
 @Configuration
 public class ConfigurableBean
 {
+    // instantiate, configure and return bean ...
     @Bean(name = "actor")
     public Actor getActor()
     {
