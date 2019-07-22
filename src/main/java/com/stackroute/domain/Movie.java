@@ -8,6 +8,7 @@ public class Movie
     public void setActor(Actor actor) {
         this.actor = actor;
     }
+//Displaying information of actor
     public void display()
     {
         System.out.println("Actor information : "+actor.getName()+" : gender is :" +actor.getGender()+" : age is :" +actor.getAge());
