@@ -8,7 +8,7 @@ public class Movie
     @Autowired
     public Actor actor;
 
-
+//construtor with the name movie
     public Movie()
     {
     }
@@ -23,12 +23,12 @@ public class Movie
     {
         this.actor = actor;
     }
-
+//Arguments passed
     public Movie(Actor actor)
     {
         this.actor = actor;
     }
-
+ //displaying information of actor
     public void display()
     {
         System.out.println("Actor information : "+actor.getName()+" : gender is :" +actor.getGender()+" : age is :" +actor.getAge());

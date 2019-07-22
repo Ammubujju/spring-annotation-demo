@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
 public class Actor {
-
+//Declartion
     private String name;
     private String gender;
     private int age;
@@ -18,7 +18,7 @@ public class Actor {
         this.age = age;
     }
 
-
+//Using Getters
     public String getName() {
         return name;
     }
